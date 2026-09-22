@@ -1,4 +1,3 @@
-hardcoded
 from langchain_core.tools import tool
 @tool
 def calculator(expression:str)-> str:
@@ -20,4 +19,3 @@ def reverse_string(text: str) -> str:
 # Export all tools in a clean list
 tools_list = [calculator, word_length, reverse_string]
 
-#dynamic code taking user input

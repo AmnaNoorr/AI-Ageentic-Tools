@@ -8,5 +8,5 @@ warnings.filterwarnings("ignore", message="Direct use of automatic function call
 
 # 1. FIX: Update the model name to gemini-3.6-flash
 llm = ChatGoogleGenerativeAI(model="gemini-3.6-flash")
- 
+
 agent_executor = create_react_agent(llm, tools_list)
