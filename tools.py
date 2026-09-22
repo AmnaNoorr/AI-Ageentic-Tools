@@ -1,7 +1,8 @@
+hardcoded
 from langchain_core.tools import tool
 @tool
-def calculator(expression:string)-> str:
-    #evaluates a basic arithmetic expression
+def calculator(expression:str)-> str:
+    """evaluates a basic arithmetic expression"""
     try:
         return(str(eval(expression, {"__builtins__":{}})))
     except Exception as e:
@@ -19,3 +20,4 @@ def reverse_string(text: str) -> str:
 # Export all tools in a clean list
 tools_list = [calculator, word_length, reverse_string]
 
+#dynamic code taking user input
